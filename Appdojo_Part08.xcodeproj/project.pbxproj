@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		21C6D86725E27AC8006D2232 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C6D86625E27AC8006D2232 /* AppDelegate.swift */; };
 		21C6D86925E27AC8006D2232 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C6D86825E27AC8006D2232 /* SceneDelegate.swift */; };
-		21C6D86B25E27AC8006D2232 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C6D86A25E27AC8006D2232 /* ViewController.swift */; };
 		21C6D86E25E27AC8006D2232 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C6D86C25E27AC8006D2232 /* Main.storyboard */; };
 		21C6D87025E27ACA006D2232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21C6D86F25E27ACA006D2232 /* Assets.xcassets */; };
 		21C6D87325E27ACA006D2232 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C6D87125E27ACA006D2232 /* LaunchScreen.storyboard */; };
+		21C6D87C25E27E9D006D2232 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C6D87B25E27E9D006D2232 /* RedViewController.swift */; };
+		21C6D87F25E27EAA006D2232 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C6D87E25E27EAA006D2232 /* GreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		21C6D86325E27AC8006D2232 /* Appdojo_Part08.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appdojo_Part08.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21C6D86625E27AC8006D2232 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21C6D86825E27AC8006D2232 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		21C6D86A25E27AC8006D2232 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		21C6D86D25E27AC8006D2232 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21C6D86F25E27ACA006D2232 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21C6D87225E27ACA006D2232 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21C6D87425E27ACA006D2232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21C6D87B25E27E9D006D2232 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		21C6D87E25E27EAA006D2232 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				21C6D86625E27AC8006D2232 /* AppDelegate.swift */,
 				21C6D86825E27AC8006D2232 /* SceneDelegate.swift */,
-				21C6D86A25E27AC8006D2232 /* ViewController.swift */,
+				21C6D87B25E27E9D006D2232 /* RedViewController.swift */,
+				21C6D87E25E27EAA006D2232 /* GreenViewController.swift */,
 				21C6D86C25E27AC8006D2232 /* Main.storyboard */,
 				21C6D86F25E27ACA006D2232 /* Assets.xcassets */,
 				21C6D87125E27ACA006D2232 /* LaunchScreen.storyboard */,
@@ -77,6 +80,7 @@
 				21C6D85F25E27AC8006D2232 /* Sources */,
 				21C6D86025E27AC8006D2232 /* Frameworks */,
 				21C6D86125E27AC8006D2232 /* Resources */,
+				21C6D88325E27F55006D2232 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -132,14 +136,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21C6D88325E27F55006D2232 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		21C6D85F25E27AC8006D2232 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21C6D86B25E27AC8006D2232 /* ViewController.swift in Sources */,
+				21C6D87C25E27E9D006D2232 /* RedViewController.swift in Sources */,
 				21C6D86725E27AC8006D2232 /* AppDelegate.swift in Sources */,
 				21C6D86925E27AC8006D2232 /* SceneDelegate.swift in Sources */,
+				21C6D87F25E27EAA006D2232 /* GreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
