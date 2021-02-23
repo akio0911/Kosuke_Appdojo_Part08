@@ -11,7 +11,7 @@
         <scene sceneID="xHg-W5-Xaq">
             <objects>
                 <viewController id="qMg-KM-XfT" customClass="GreenViewController" customModule="Appdojo_Part08" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nIg-vZ-0aC" customClass="Green">
+                    <view key="view" contentMode="scaleToFill" id="nIg-vZ-0aC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -87,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TD3-CS-Wio" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="431.8840579710145" y="-289.28571428571428"/>
+            <point key="canvasLocation" x="432" y="-322"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="lNj-SS-CbO">
